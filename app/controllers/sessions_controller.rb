@@ -12,6 +12,11 @@ class SessionsController < ApplicationController
     end
   end
 
+  def destroy
+    session.delete :name
+    redirect_to '/login'
+  end 
+
 
 
 end
