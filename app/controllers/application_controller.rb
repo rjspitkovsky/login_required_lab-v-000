@@ -4,10 +4,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def home
-    redirect to 'sessions/login'
+    redirect to '/sessions/login'
   end
 
   def current_user
     session[:name]
-  end 
+  end
 end
