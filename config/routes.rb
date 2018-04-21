@@ -8,7 +8,7 @@ Rails.application.routes.draw do
    post '/login' => 'sessions#create'
    post '/logout' => 'sessions#destroy'
    get '/welcome' => 'secrets#welcome'
-   get '/secret' => 'secrets#secret'
+   get '/secret' => 'secrets#show'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
