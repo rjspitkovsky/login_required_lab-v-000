@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def home
-    redirect to '/sessions/login'
+    redirect to '/login'
   end
 
   def current_user
