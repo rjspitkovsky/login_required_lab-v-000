@@ -1,5 +1,5 @@
 class SecretsController < ApplicationController
-  before_action :require_login 
+  before_action :require_login
 
   def welcome
     @user = current_user
@@ -8,9 +8,9 @@ class SecretsController < ApplicationController
   def show
   end
 
-  private 
+  private
 
-    def require_login 
+    def require_login
       return head(:forbidden) unless session.include?(:name)
     end 
 
