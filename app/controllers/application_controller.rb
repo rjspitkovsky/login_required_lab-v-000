@@ -5,5 +5,9 @@ class ApplicationController < ActionController::Base
 
   def home
     redirect to 'sessions/login'
+  end
+
+  def current_user
+    session[:name]
   end 
 end

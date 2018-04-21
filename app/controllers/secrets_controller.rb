@@ -1,11 +1,11 @@
-class SecretsController < ApplicationController 
+class SecretsController < ApplicationController
 
-  def welcome 
+  def welcome
+
+  end
+
+  def secret
 
   end 
 
-  def secret 
-
-  end 
-
-end 
+end
